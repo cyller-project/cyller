@@ -1,0 +1,38 @@
+@CHARSET "EUC-KR";
+
+th, td, dt, li, div, p {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f; line-height: 140%;}
+input {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f;}
+select {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f;}
+textarea {font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f; line-height: 140%;}
+img {border:0px;}
+
+ul {list-style:none;}
+ul li{ display:inline;}
+* {margin:0px auto; padding:0px;}
+
+body {
+	scrollbar-face-color: #F3F3F3; 
+	scrollbar-shadow-color: #9D9D9D; 
+	scrollbar-highlight-color: #9D9D9D; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #F3F3F3; 
+	scrollbar-track-color: #F6F6F6; 
+	scrollbar-arrow-color: #000000;
+	font-size:12px;letter-spacing:0;
+	overflow-x:hidden;
+}
+
+a:link {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:visited {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:active {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:hover {text-decoration: underline; font-size: 12px; color: #009900;}
+a img{border:0px;}
+
+a {selector-dummy:expression(this.hideFocus=true);}
+
+.header {padding:5px 10px; border-bottom:1px solid #C7C7C7;}
+.header > div {text-align:right;}
+.header > div > p {padding:1px 4px 0px 4px; margin-left:5px; border:1px solid #D0D0D0; box-shadow: 0 0 2px #D0D0D0; float:right; text-align:center; cursor:pointer;}
+.header > div > span {float:left;}
+.header h1 {clear:both; font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-style:Italic; font-size:30px; line-height:100%;}
+.header h1 span {color:#FF1100;}

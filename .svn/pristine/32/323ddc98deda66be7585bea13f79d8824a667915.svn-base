@@ -1,0 +1,55 @@
+<script>
+(function($) {
+	$(document).ready(function() {
+	
+		//회원가입 처리
+		$(".reg_box").click(function() {
+			var mem_name = $("#mem_name").val().replace(/\s/gi, '');
+
+			if(mem_name.length == 0) {
+				alert("이름을 입력해주세요.");
+
+				$("#mem_name").val("");
+				$("#mem_name").focus();
+				return;
+			}
+			$("#mem_name").val(mem_name);
+
+			$("#mem_modi_frm").submit();
+		});
+	});
+}) (jQuery);
+</script>
+
+<div class="join_box">
+	<p class="tit">회원정보수정</p>
+	<p class="expr"></p>
+	<?php echo validation_errors();?>
+	<?php echo $result;?>
+	
+	<?=form_open_multipart("/member/join_modi_progress", array('id'=>'mem_modi_frm', 'name'=>'mem_modi_frm'));?>
+	<div class="datas">
+		<ul>
+			<li class="f_tit">이메일 주소</li>
+			<li class="f_sep">:</li>
+			<li class="f_cont">
+				<?php echo $this->session->userdata('userid');?>				
+			</li>
+			<li class="f_tit">이름</li>
+			<li class="f_sep">:</li>
+			<li class="f_cont"><input type="text" name="mem_name" id="mem_name" style="width:100%;"  value="<?php echo iconv('euc-kr', 'utf-8', $this->session->userdata('user_name'));?>" /></li>
+		</ul>
+		<ul>
+			<li class="f_tit">사진</li>
+			<li class="f_sep">:</li>
+			<li class="f_cont"><input type="file" name="mem_photo" id="mem_photo" style="width:100%;" /></li>
+		</ul>
+	</div>
+	
+	<div class="btn_area">
+		<p class="reg_box">수정하기</p>
+	</div>
+	<?=form_close()?>
+	
+	<p class="expr2"></p>
+</div>

@@ -1,0 +1,4 @@
+<div class="main_cont">
+	<?php phpinfo();?>
+</div>
+

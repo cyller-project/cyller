@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cyller Note</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="/include/css/member.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function() {
+			$(".main_link").click(function() {
+				document.location.href = "/";
+			});
+			
+			$(".mem_join").click(function() {
+				document.location.href = "/member/join_form";
+			});
+
+			$(".mem_login").click(function() {
+				document.location.href = "/member/login";
+			});
+		});
+	}) (jQuery);
+	</script>
+</head>
+<body>
+
+<div style="width:500px;">
+	<header>
+		<div class="header">
+			<div>
+				<p class="mem_login">로그인</p>
+				<p class="mem_join">회원가입</p>
+			</div>
+		
+			<h1><span class="main_link">Cyller</span> Note</h1>
+			
+		</div>
+	</header>

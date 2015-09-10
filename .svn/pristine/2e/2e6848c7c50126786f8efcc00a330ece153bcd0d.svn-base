@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cyller Note</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<link rel="stylesheet" href="/include/css/default.css" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function() {
+			$(".mem_join").click(function() {
+				document.location.href = "/member/join_form";
+			});
+
+			$(".mem_login").click(function() {
+				document.location.href = "/member/login";
+			});
+
+			$(".mem_joinmodi").click(function() {
+				document.location.href = "/member/join_modify";
+			});
+
+			$(".mem_logout").click(function() {
+				document.location.href = "/member/logout";
+			});
+
+			$(".main_left").height($(window).height() - $(".header").height());
+		});
+	}) (jQuery);
+	</script>
+</head>
+<body>
+
+<header>
+	<div class="header">
+<?php if($this->session->userdata('userid')) :?>
+		<div>
+			<p class="mem_logout">로그아웃</p>
+			<p class="mem_joinmodi">정보수정</p>
+			<span><?php echo iconv('euc-kr', 'utf-8', $this->session->userdata('user_name'));?>님 반갑습니다.</span>
+		</div>
+<?php else :?>	
+		<div>
+			<p class="mem_login">로그인</p>
+			<p class="mem_join">회원가입</p>
+		</div>
+<?php endif;?>		
+	
+		<h1><span>Cyller</span> Note</h1>
+		
+	</div>
+</header>
+
+<div class="body_wrap">
+	<div class="main_left">
+		<div class="mem_photo"><img src="/uploads/memphoto/<?php echo $this->session->userdata('user_photo');?>" /></div>
+	</div>

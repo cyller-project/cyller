@@ -1,0 +1,63 @@
+@CHARSET "EUC-KR";
+
+th, td, dt, li, div, p {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f; line-height: 140%;}
+input {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f;}
+select {  font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f;}
+textarea {font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-size: 12px; color: #4f4f4f; line-height: 140%;}
+img {border:0px;}
+
+ul {list-style:none;}
+ul li{ display:inline;}
+* {margin:0px auto; padding:0px;}
+
+body {
+	scrollbar-face-color: #F3F3F3; 
+	scrollbar-shadow-color: #9D9D9D; 
+	scrollbar-highlight-color: #9D9D9D; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #F3F3F3; 
+	scrollbar-track-color: #F6F6F6; 
+	scrollbar-arrow-color: #000000;
+	font-size:12px;letter-spacing:0;
+	overflow-x:hidden;
+}
+
+a:link {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:visited {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:active {color: #4f4f4f; font-size: 12px; font-family:Arial,Dotum,µ¸¿ò,sans-serif; text-decoration: none;}
+a:hover {text-decoration: underline; font-size: 12px; color: #009900;}
+a img{border:0px;}
+
+a {selector-dummy:expression(this.hideFocus=true);}
+
+.header {padding:5px 0px;}
+.header > div {text-align:right;}
+.header > div > p {padding:1px 4px 0px 4px; margin-left:5px; border:1px solid #D0D0D0; box-shadow: 0 0 2px #D0D0D0; float:right; text-align:center; cursor:pointer;}
+.header h1 {font-family:Arial,Dotum,µ¸¿ò,sans-serif; font-style:Italic; font-size:30px; line-height:100%;}
+.header h1 span {color:#FF1100;}
+.header .main_link {cursor:pointer;}
+
+.join_box {margin-top:10px; width:100%; min-height:300px; border:1px solid #80C080; border-radius:10px; padding:10px; box-sizing:border-box;}
+.join_box .tit {padding:10px 0; font-size:20pt; font-weight:bold; color:#FF8000; font-style:italic;}
+.join_box .expr {font-size:8pt;}
+
+.join_box .datas {padding:10px 0; text-align:left;}
+.join_box ul {width:355px; float:left;}
+.join_box li {float:left; height:30px; box-sizing:border-box;}
+.join_box .f_tit {width:150px; text-align:right; padding:5px; font-weight:bold;}
+.join_box .f_sep {width:5px; padding:3px 0;}
+.join_box .f_cont {width:200px; padding:2px 5px;}
+.join_box .f_cont input {height:20px; border:1px solid #C2C2C2; padding:2px 7px 0 7px;}
+
+.join_box .btn_area {clear:both; padding:15px 0 0 210px; text-align:center;}
+.join_box .reg_box {width:80px; padding:3px 4px 0px 4px; margin-left:5px; border:1px solid #515151; box-shadow: 0 0 2px #D0D0D0;  border-radius:5px; background-color:#FFD040; text-align:center; cursor:pointer;}
+.join_box .expr2 {padding:15px 0; font-size:8pt; color:#FF4040;}
+
+.join_box .msg_box {padding:20px 10px;}
+.join_box .msg {font-family:±¼¸², Arial; font-size:15pt; font-weight:bold; color:#007F00;}
+.join_box .msg2 {padding-top:10px;}
+
+.nocompare {color:red; font-weight:bold; font-size:8pt;}
+.compare {color:blue; font-weight:bold; font-size:8pt;}
+
+.join_box .error_box {border:1px solid #FF4040; background-color:#FFD0D0; padding:5px;}
